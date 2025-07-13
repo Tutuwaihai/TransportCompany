@@ -1,0 +1,102 @@
+.invoices-tables-column {
+  display: block;
+  width: 100%;
+}
+
+.invoices-table {
+  width: 100%;
+  margin-bottom: 24px;
+  max-height: 350px;
+  overflow: auto;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  min-width: 1200px;
+}
+
+.invoice-th, .invoice-td {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.invoice-th {
+  background: #f8f9fa;
+  font-weight: bold;
+}
+
+.invoice-row-selected {
+  background: #ffeeba !important;
+}
+
+.invoice-pagination {
+  margin-top: 8px;
+  text-align: right;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.15);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-window {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 32px 40px 24px 40px;
+  min-width: 400px;
+  max-width: 90vw;
+}
+
+.modal-window h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.modal-row {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.modal-row label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.modal-row select, .modal-row input, .modal-row textarea {
+  width: 220px;
+  padding: 4px 8px;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  .modal-window {
+    min-width: 0;
+    padding: 16px 8px;
+  }
+  .modal-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+} 
